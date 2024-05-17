@@ -1,0 +1,4 @@
+.toggled {
+  display: none;
+  transition: display 1s;
+}
