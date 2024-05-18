@@ -1,4 +1,6 @@
-.toggled {
+.title-cover {
+}
+
+.title-cover.authentic {
   display: none;
-  transition: display 1s;
 }
