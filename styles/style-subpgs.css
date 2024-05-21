@@ -1,0 +1,190 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+p {
+}
+
+/* Elements
+--------------------------------------------- */
+ul {
+}
+
+ol {
+}
+
+dl {
+}
+
+figure {
+}
+
+table {
+}
+
+/* Links
+--------------------------------------------- */
+a {
+}
+
+a:visited {
+}
+
+a:hover {
+}
+
+a:focus {
+}
+
+a:active {
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+.title-cover {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  overflow: hidden;
+  filter: brightness(55%);
+}
+
+h1 {
+  position: static;
+  color: black;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+@media (min-width: 50em) {
+  h1 {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 18vh;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Main
+--------------------------------------------- */
+
+.article-wrapper {
+  margin: 7rem 0;
+}
+
+.article-wrapper h2,
+.article-wrapper p {
+  margin: 2rem;
+}
+
+.article-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.article-grid figure {
+  width: 100%;
+  margin: 0;
+}
+
+.article-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-grid figcaption {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: gainsboro;
+  padding: 0.5rem 0;
+}
+
+figcaption h3 {
+  margin: 1rem 0 0 2rem;
+}
+
+@media (min-width: 50em) {
+  .section-contents-wrapper {
+    padding: 6rem 3rem;
+    margin-bottom: 12rem;
+  }
+
+  .article-wrapper {
+    margin: 0;
+  }
+
+  .article-wrapper h2,
+  .article-wrapper p {
+    margin-left: 9vw;
+  }
+
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .article-grid figure {
+    margin: 0;
+  }
+
+  .figcaption {
+    padding: 0;
+  }
+
+  .figcaption h3,
+  .figcaption p {
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+}
+/* Footer
+--------------------------------------------- */

@@ -6,7 +6,7 @@
     <title>Visit Seoul</title>
     <link rel="stylesheet" href="styles/sample-css-structure.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/places.css" />
+    <link rel="stylesheet" href="styles/style-subpgs.css" />
     <link rel="stylesheet" href="styles/foods.css" />
     <script defer src="scripts/script.js"></script>
     <!-- favicon -->
@@ -18,8 +18,18 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><a href="index.html">Logo</a></div>
-        <ul>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <ul class="nav-list-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="foods.html">Foods</a></li>
+          <li><a href="credtis.html">Credits</a></li>
+        </ul>
+        <button id="nav-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul id="nav-list" class="nav-list-mobile">
           <li><a href="index.html">Home</a></li>
           <li><a href="places.html">Places</a></li>
           <li><a href="culture.html">Culture</a></li>
@@ -30,13 +40,13 @@
     </header>
     <main>
       <section class="section-title">
-        <h1>Foods<button id="pgtogglebtn">toggle button test</button></h1>
         <img
           id="title-image"
           class="title-cover places"
           src="images/foods/sample-cover-foods.jpg"
           alt=""
         />
+        <h1>Foods</h1>
       </section>
       <section class="section-contents-wrapper">
         <h2>grid title</h2>
@@ -45,14 +55,7 @@
           Cupiditate exercitationem voluptas eum nesciunt aperiam mollitia
           asperiores vitae, odio repellat a?
         </p>
-        <section id="alterpage" class="alterpage">
-          <h2>authentic page</h2>
-          <p>
-            ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cupiditate exercitationem voluptas eum nesciunt aperiam mollitia
-            asperiores vitae, odio repellat a?
-          </p>
-        </section>
+
         <div class="grid-wrapper">
           <div class="grid-foodthumb">
             <figcaption>Chicken</figcaption>

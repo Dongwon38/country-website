@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Seoul</title>
+    <title>Visit Korea</title>
     <link rel="stylesheet" href="styles/sample-css-structure.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <script defer src="scripts/script.js"></script>
     <!-- favicon -->
     <script
@@ -16,8 +17,18 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><a href="index.html">Logo</a></div>
-        <ul>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <ul class="nav-list-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="foods.html">Foods</a></li>
+          <li><a href="credtis.html">Credits</a></li>
+        </ul>
+        <button id="nav-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul id="nav-list" class="nav-list-mobile">
           <li><a href="index.html">Home</a></li>
           <li><a href="places.html">Places</a></li>
           <li><a href="culture.html">Culture</a></li>
@@ -28,35 +39,23 @@
     </header>
     <main>
       <section class="section-title">
-        <div class="title-wrapper"><h1>Visit Korea</h1></div>
-        <video src="videos/main-sample.mp4" width="100%" loop muted></video>
+        <video src="videos/main-video.mp4" width="100%" loop muted></video>
+        <div class="title-wrapper">
+          <h1><a href="#info-wrapper">Visit Korea</a></h1>
+        </div>
       </section>
 
-      <div class="info-wrapper">
+      <div class="info-wrapper" id="info-wrapper">
         <section class="section-info">
           <article>
-            <h3>title</h3>
+            <h3>KOREA invites U</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               corporis itaque qui minus laudantium, iusto culpa dolores incidunt
               atque totam quos, ab eligendi amet quod, ipsam quibusdam modi
               officiis harum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Nam corporis itaque qui minus laudantium, iusto culpa
-              dolores incidunt atque totam quos, ab eligendi amet quod, ipsam
-              quibusdam modi officiis harum.
+              elit.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              corporis itaque qui minus laudantium, iusto culpa dolores incidunt
-              atque totam quos, ab eligendi amet quod, ipsam quibusdam modi
-              officiis harum. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Nam corporis itaque qui minus laudantium, iusto culpa
-              dolores incidunt atque totam quos, ab eligendi amet quod, ipsam
-              quibusdam modi officiis harum.
-            </p>
-          </article>
-          <article>
-            <h3>title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               corporis itaque qui minus laudantium, iusto culpa dolores incidunt
@@ -65,7 +64,16 @@
             </p>
           </article>
           <article>
-            <h3>title</h3>
+            <h3>Make it Happen!</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              corporis itaque qui minus laudantium, iusto culpa dolores incidunt
+              atque totam quos, ab eligendi amet quod, ipsam quibusdam modi
+              officiis harum.
+            </p>
+          </article>
+          <article>
+            <h3>Things to Do</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
               corporis itaque qui minus laudantium, iusto culpa dolores incidunt
@@ -76,31 +84,31 @@
         </section>
 
         <aside class="side-bar">
-          <h2>contact</h2>
+          <h3>Plan your trip</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-            perspiciatis error, temporibus hic amet nulla eos veniam provident
-            quos consequatur, laborum odio, dicta sequi. Consectetur doloribus
-            in dignissimos laudantium ut.
+            Tell us about your plans and one of our specialists will plan a
+            unique trip for you!
           </p>
           <form class="form" action="">
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" required />
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
             <label for="country">Country</label>
-            <input type="text" id="country" />
+            <input type="text" id="country" required />
             <label for="language">Language</label>
-            <input type="text" id="language" />
+            <input type="text" id="language" required />
+            <label for="textarea"> About your plan (optional)</label>
+            <textarea id="textarea"></textarea>
             <input type="submit" />
           </form>
         </aside>
       </div>
 
       <section class="section-links">
-        <h2>Explore Seoul</h2>
+        <h2>Explore Korea</h2>
         <article>
-          <img src="images/sample-place.JPG" alt="" />
+          <img src="images/link-place.JPG" alt="" />
           <h3>Places</h3>
           <p>
             ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -109,7 +117,7 @@
           <a href="">See More</a>
         </article>
         <article>
-          <img src="images/sample-food.JPG" alt="" />
+          <img src="images/link-food2.jpg" alt="" />
           <h3>Foods</h3>
           <p>
             ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -118,7 +126,7 @@
           <a href="">See More</a>
         </article>
         <article>
-          <img src="images/sample-culture.JPG" alt="" />
+          <img src="images/link-culture2.jpg" alt="" />
           <h3>Culture</h3>
           <p>
             ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.

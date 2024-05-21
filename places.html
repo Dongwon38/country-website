@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Seoul</title>
+    <title>Visit Korea</title>
     <link rel="stylesheet" href="styles/sample-css-structure.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/places.css" />
+    <link rel="stylesheet" href="styles/style-subpgs.css" />
     <script defer src="scripts/script.js"></script>
     <!-- favicon -->
     <script
@@ -17,8 +17,18 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><a href="index.html">Logo</a></div>
-        <ul>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo2.png" alt="" /></a>
+        </div>
+        <ul class="nav-list-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="foods.html">Foods</a></li>
+          <li><a href="credtis.html">Credits</a></li>
+        </ul>
+        <button id="nav-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul id="nav-list" class="nav-list-mobile">
           <li><a href="index.html">Home</a></li>
           <li><a href="places.html">Places</a></li>
           <li><a href="culture.html">Culture</a></li>
@@ -29,84 +39,141 @@
     </header>
     <main>
       <section class="section-title">
-        <h1>Places</h1>
         <img
           class="title-cover places"
           src="images/places/sample-cover-places.jpg"
           alt=""
         />
+        <h1>Places</h1>
       </section>
       <section class="section-contents-wrapper">
         <article class="article-wrapper">
-          <h2>title</h2>
+          <h2>Most Featured</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            deserunt illum voluptates consequatur enim vel quis laudantium
-            eveniet quaerat voluptatem reiciendis debitis, maxime aspernatur
-            rerum accusantium error excepturi tenetur voluptas!
+            deserunt illum voluptates consequatur enim vel.
           </p>
           <div class="article-grid">
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/featured-bukchon.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Bukchon</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/featured-ikseon.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Ikseon-dong</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/featured-ddp.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>DDP</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
           </div>
         </article>
       </section>
       <section class="section-contents-wrapper">
         <article class="article-wrapper">
-          <h2>title</h2>
+          <h2>Palaces</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            deserunt illum voluptates consequatur enim vel quis laudantium
-            eveniet quaerat voluptatem reiciendis debitis, maxime aspernatur
-            rerum accusantium error excepturi tenetur voluptas!
+            deserunt illum voluptates consequatur enim vel.
           </p>
           <div class="article-grid">
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/changdeokgung.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Chang-Deok Gung</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/Gyeongbokgung-palace.jpg" alt="" />
+              <figcaption class="figcaption">
+                <h3>Gyeong-Bok Gung</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/deoksugung.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Deok-Su Gung</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
           </div>
         </article>
       </section>
       <section class="section-contents-wrapper">
         <article class="article-wrapper">
-          <h2>title</h2>
+          <h2>Golmok</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            deserunt illum voluptates consequatur enim vel quis laudantium
-            eveniet quaerat voluptatem reiciendis debitis, maxime aspernatur
-            rerum accusantium error excepturi tenetur voluptas!
+            deserunt illum voluptates consequatur enim vel.
           </p>
           <div class="article-grid">
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/bossam-golmok.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Bossam Golmok</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/nogari-golmok.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Nogari Golmok</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
             <figure>
-              <img src="images/sample-culture.JPG" alt="" />
-              <figcaption>img title</figcaption>
+              <img src="images/places/jokbal-golmok.png" alt="" />
+              <figcaption class="figcaption">
+                <h3>Jokbal Golmok</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Neque illo minus, dolorem placeat, fugit praesentium odio quis
+                  laboriosam obcaecati nobis fuga
+                </p>
+              </figcaption>
             </figure>
           </div>
         </article>

@@ -32,27 +32,23 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3rem;
-}
-
-h3 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 p {
+  font-size: 1.5rem;
+}
+
+nav a {
   font-size: 1.5rem;
 }
 
@@ -68,29 +64,21 @@ nav {
   z-index: 2;
 }
 
+.logo {
+  width: 1.5rem;
+  margin: 0 1.5rem;
+  z-index: 100;
+}
+
+.logo img {
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
   display: flex;
 }
 
-ol {
-}
-
-dl {
-}
-
-figure {
-}
-
-table {
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 10rem;
-  gap: 1rem;
-}
 /* Links
 --------------------------------------------- */
 
@@ -126,29 +114,33 @@ a:active {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-nav .logo {
-  margin: 0 1.5rem;
-  font-size: 2rem;
-}
-
-nav ul li {
-  margin: 1rem 1.5rem;
-  font-size: 2rem;
-}
-
+/* index: home */
 .info-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 0 2.5rem;
 }
 
-.section-info {
-  width: 35%;
-  margin: 3rem 6rem 3rem 3rem;
-}
-
-.side-bar {
-  width: 20%;
-  margin: 3rem 3rem 3rem 6rem;
+@media (min-width: 50em) {
+  .info-wrapper {
+    flex-direction: row;
+  }
+  .section-info {
+    width: 35%;
+    margin: 3rem 6rem 3rem 3rem;
+  }
+  .side-bar {
+    width: 22%;
+    margin: 3rem 3rem 3rem 6rem;
+  }
+  .side-bar p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .form {
+    width: 75%;
+  }
 }
 
 footer {
@@ -165,6 +157,58 @@ footer {
 /* Header
 --------------------------------------------- */
 
+/* 2 Mobile ==================== */
+
+nav {
+  padding: 0.5rem 0;
+}
+
+nav button {
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  z-index: 100;
+}
+
+.nav-list-mobile {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000a7;
+  z-index: 10;
+  color: black;
+  line-height: 1;
+  margin: 0;
+  padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.active {
+  display: flex;
+}
+
+.nav-list-desktop {
+  display: none;
+}
+
+/* 3 Desktop ==================== */
+@media (min-width: 50em) {
+  .nav-list-mobile,
+  nav button {
+    display: none;
+  }
+
+  .nav-list-desktop {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 /* Main
 --------------------------------------------- */
 
@@ -173,14 +217,63 @@ footer {
 }
 
 .title-wrapper {
-  position: absolute;
-  left: 15%;
-  bottom: 15%;
-  color: white;
+  display: flex;
+  justify-content: center;
 }
 
+h1 a {
+  color: black;
+}
+
+video {
+  width: 160%;
+}
+
+/* side-bar */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+textarea {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4cae4c;
+}
+
+/* section link */
 .section-links h2 {
-  padding: 3rem 0 3rem 12rem;
+  font-size: 2.5rem;
+  padding-left: 2rem;
 }
 
 .section-links article {
@@ -191,29 +284,86 @@ footer {
 }
 
 .section-links img {
+  display: block;
   position: absolute;
-  width: 100%;
   object-fit: cover;
-  object-position: center;
   z-index: -1;
   filter: brightness(50%);
-  display: block;
 }
 
 .section-links h3,
 .section-links p,
 .section-links a {
-  margin-left: 12rem;
+  margin: 2rem;
   color: white;
 }
 
 .section-links h3 {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .section-links p {
-  width: 35rem;
+  width: 80%;
+}
+
+@media (min-width: 50em) {
+  /* title */
+  .title-wrapper {
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
+    color: white;
+    opacity: 50%;
+    z-index: 2;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  h1 a {
+    color: white;
+  }
+
+  /* section link */
+  .section-links h2 {
+    padding: 3rem 0 3rem 9rem;
+  }
+
+  .section-links article {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  .section-links img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+
+  .section-links h3,
+  .section-links p,
+  .section-links a {
+    margin-left: 9rem;
+    color: white;
+  }
+
+  .section-links h3 {
+    margin-top: 10rem;
+  }
+
+  .section-links p {
+    width: 35rem;
+  }
 }
 
 /* Footer
 --------------------------------------------- */
+
+/* ------------------ Places ------------------ */

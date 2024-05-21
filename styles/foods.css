@@ -130,7 +130,7 @@ a:active {
   z-index: 2;
   background-color: blue;
   position: absolute;
-  top: 60vh;
+  top: 10%;
   right: -100%;
   transition: right 1s ease;
 }
@@ -138,6 +138,11 @@ a:active {
 .toggle {
   right: 0;
   transition: right 1s ease;
+}
+
+.pgtogglebtn {
+  position: absolute;
+  z-index: 100;
 }
 
 .alterpage-bg {
