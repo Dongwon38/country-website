@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is an example of a meta description."
+    />
     <title>Visit Korea</title>
-    <link rel="stylesheet" href="/styles/sample-css-structure.css" />
+    <link rel="stylesheet" href="/styles/normalize-fwd.css" />
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/index.css" />
     <script defer src="/scripts/script.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -35,6 +46,7 @@
     ></script>
   </head>
   <body>
+    <a class="screen-reader-text" href="#site-main">Skip to content</a>
     <header>
       <nav>
         <div class="logo">
@@ -57,7 +69,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="site-main">
       <section class="section-title">
         <video src="videos/main-video.mp4" width="100%" loop muted></video>
         <div class="title-wrapper">

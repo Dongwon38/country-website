@@ -200,6 +200,7 @@ blockquote {
   flex-direction: column;
   align-items: center;
   margin: 2rem 0;
+  font-family: "Shadows Into Light";
   font-size: 1.5rem;
 }
 
