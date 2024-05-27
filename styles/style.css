@@ -195,6 +195,18 @@ nav button {
   display: none;
 }
 
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+cite {
+  padding: 2rem 0;
+}
+
 /* 3 Desktop ==================== */
 @media (min-width: 50em) {
   .nav-list-mobile,
@@ -206,6 +218,10 @@ nav button {
     display: flex;
     gap: 1rem;
     margin-right: 1rem;
+  }
+  blockquote {
+    font-size: 2rem;
+    margin: 5rem 0;
   }
 }
 
@@ -227,6 +243,16 @@ h1 a {
 
 video {
   width: 160%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid img {
+  display: block;
+  width: 100%;
 }
 
 /* side-bar */
@@ -323,6 +349,12 @@ input[type="submit"] {
 
   h1 a {
     color: white;
+  }
+
+  /* grid */
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* section link */

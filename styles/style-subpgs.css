@@ -51,6 +51,23 @@ figure {
 }
 
 table {
+  display: block;
+  background-color: beige;
+  border-spacing: 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.15rem;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 4px;
 }
 
 /* Links
@@ -148,6 +165,17 @@ h1 {
 
 figcaption h3 {
   margin: 1rem 0 0 2rem;
+}
+
+/* Credits */
+
+.credits {
+  display: flex;
+  justify-content: center;
+}
+
+.credits table {
+  word-break: break-all;
 }
 
 @media (min-width: 50em) {
